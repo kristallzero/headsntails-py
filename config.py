@@ -1,7 +1,7 @@
 import json
 
 
-def load():
+def load() -> dict:
     try:
         with open('data.json') as f:
             config = json.load(f)
@@ -13,7 +13,7 @@ def load():
         return {}
 
 
-def save(config):
+def save(config: dict) -> None:
     try:
         with open('data.json', 'w') as f:
             json.dump(config if type(config) == dict else {}, f)
