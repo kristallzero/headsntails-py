@@ -5,7 +5,7 @@
 ```bash
 ./run.sh
 ```
-- # Method 2:
+- ### Method 2:
 ```bash
 source .venv/bin/activate
 python <python_file>.py
